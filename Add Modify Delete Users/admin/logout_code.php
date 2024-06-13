@@ -9,5 +9,5 @@
     session_start();
     session_unset();
     session_destroy();
-    header("Location: http://localhost/php/Notes_1/Add%20Modify%20Delete%20Users/admin/index.php");
+    header("location:http://localhost/Add%20Modify%20Delete%20Users/admin/index.php");
 ?>
