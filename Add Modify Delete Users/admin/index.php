@@ -21,7 +21,7 @@
 <body>
     <div class="container">
         <div class="logo">NEWS 24</div>
-        <form action="login_code.php" method="post" autocomplete="on">
+        <form action="login_code.php" method="post" autocomplete="off">
             <label for="uname">User Name</label>
             <input type="text" name="user_name" id="">
             <label for="pass">Password</label>
