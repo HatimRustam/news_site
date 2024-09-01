@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION["user_name"])){
-    header("location:http://localhost/news_site/Add%20Modify%20Delete%20Users/admin/admin/index.php");
+    header("location:http://localhost/Add%20Modify%20Delete%20Users/admin/admin/index.php");
     exit;
 }
 ?>
@@ -49,7 +49,7 @@ if($old_category != $category){
 $sql = mysqli_multi_query($connection, $query) or die("Query failed: " . mysqli_error($connection));
 
 if($sql){
-    header("location:http://localhost/news_site/Add%20Modify%20Delete%20Users/admin/post.php");
+    header("location:http://localhost/Add%20Modify%20Delete%20Users/admin/post.php");
     exit;
 }
 ?>

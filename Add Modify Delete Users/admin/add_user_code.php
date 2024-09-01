@@ -1,10 +1,10 @@
 <?php
     session_start();
     if(!isset($_SESSION["user_name"])){
-        header("location:http://localhost/news_site/Add%20Modify%20Delete%20Users/admin/index.php");
+        header("location:http://localhost/Add%20Modify%20Delete%20Users/admin/index.php");
     }
     if ($_SESSION["role"] == '1') {
-        header("location:http://localhost/news_site/Add%20Modify%20Delete%20Users/admin/post.php");
+        header("location:http://localhost/Add%20Modify%20Delete%20Users/admin/post.php");
     }
 ?>
 <?php
@@ -27,9 +27,9 @@ if (isset($_POST["save"])) {
             values('{$fname}','{$lname}','{$uname}','{$pass}',{$role})";
         if (mysqli_query($connection, $query_1)) {
             if(!isset($_SESSION["user_name"])){
-                header("location:http://localhost/news_site/Add%20Modify%20Delete%20Users/admin/post.php");
+                header("location:http://localhost/Add%20Modify%20Delete%20Users/admin/post.php");
             }else{
-                header("location:http://localhost/news_site/Add%20Modify%20Delete%20Users/admin/user.php");
+                header("location:http://localhost/Add%20Modify%20Delete%20Users/admin/user.php");
             }
         }
     }

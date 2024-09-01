@@ -155,3 +155,24 @@ option{
     font-family: "Poppins", sans-serif;
     color: black;
 }
+
+@media (max-width: 576px) {
+    .header1{
+        height: auto;
+        flex-wrap: wrap;
+    }
+    header{
+        height: auto;
+    }
+    .header1 .logo,
+.header1 .username,
+.header1 .logout {
+    padding: 10px 0; /* Adds padding inside each child */
+}
+form{
+    width: 90%;
+}
+input, select, textarea{
+    width: 80%;
+}
+}
