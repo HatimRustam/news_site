@@ -23,9 +23,9 @@
         <div class="logo">NEWS 24</div>
         <form action="login_code.php" method="post" autocomplete="off">
             <label for="uname">User Name</label>
-            <input type="text" name="user_name" id="">
+            <input type="text" name="user_name" id="" required>
             <label for="pass">Password</label>
-            <input type="password" name="password" id="">
+            <input type="password" name="password" id="" required>
             <input type="submit" name="Login" value="Login" style="margin-top: 1.5%;">
         </form>
     </div>

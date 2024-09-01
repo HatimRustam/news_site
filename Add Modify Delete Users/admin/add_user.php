@@ -66,13 +66,13 @@
             <div class="form_align">
                 <form action="add_user_code.php" method="post" autocomplete="off">
                     <label for="fname">First Name</label>
-                    <input type="text" name="first_name" id="">
+                    <input type="text" name="first_name" id="" required>
                     <label for="fname">Last Name</label>
-                    <input type="text" name="last_name" id="">
+                    <input type="text" name="last_name" id="" required>
                     <label for="fname">Username</label>
-                    <input type="text" name="user_name" id="">
+                    <input type="text" name="user_name" id="" required>
                     <label for="fname">Password</label>
-                    <input type="text" name="password" id="">
+                    <input type="text" name="password" id="" required>
                     <?php
                         if (!isset($_SESSION["user_name"])) {
                             echo '<input type="hidden" name="role" value="1">';

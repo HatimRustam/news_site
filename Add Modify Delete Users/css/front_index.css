@@ -322,3 +322,17 @@ span {
     padding: 2px 13px;
     letter-spacing: 1px;
 }
+.table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 576px) {
+    header{
+        height: auto;
+    }
+    .button a {
+        font-size: 1em;      
+        padding: 6px;
+    }
+}
