@@ -20,7 +20,7 @@ if (isset($_POST["Login"])) {
             $_SESSION["user_id"] = $user["user_id"];
             $_SESSION["role"] = $user["role"];
 
-            header("location:http://localhost/Add%20Modify%20Delete%20Users/admin/user.php");
+            header("location:http://localhost/news_site/Add%20Modify%20Delete%20Users/admin/user.php");
             exit;
         } else {
             echo "<script>

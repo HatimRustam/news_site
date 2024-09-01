@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION["user_name"])) {
-    header("location:http://localhost/Add%20Modify%20Delete%20Users/admin/index.php");
+    header("location:http://localhost/news_site/Add%20Modify%20Delete%20Users/admin/index.php");
 }
 if($_SESSION["role"] == 1){
     include "configure.php";
@@ -10,7 +10,7 @@ if($_SESSION["role"] == 1){
     $sql2 = mysqli_query($connection, $query2) or die("Query fail");
     $row2 = mysqli_fetch_assoc($sql2);
     if($row2["author"] != $_SESSION["user_id"]){
-    header("location:http://localhost/Add%20Modify%20Delete%20Users/admin/post.php");
+    header("location:http://localhost/news_site/Add%20Modify%20Delete%20Users/admin/post.php");
     }
 }
 ?>
