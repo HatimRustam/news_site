@@ -13,7 +13,7 @@ if (isset($_FILES["post_img"])) {
     $filetmp = $_FILES["post_img"]["tmp_name"];
     $filetype = $_FILES["post_img"]["type"];
     $fileext = end(explode('.',$filename));
-    $extension = array("jpeg","png","jpg");
+    $extension = array("apng","avif","jpeg","png","svg","webp");
     if(in_array($fileext,$extension)===false){
         $error[]="this extension is not allow plz use this formate jpeg,png,jpg";
     }
@@ -36,6 +36,6 @@ $author = $_SESSION["user_id"];
 $query = "insert into post(title,description,category,post_date,author,post_img) values('{$title}','{$desc}',{$category},'{$date}','{$author}','{$filename}');";
 $query .= "update category set post = post + 1 where category_id = {$category}";
 if(mysqli_multi_query($connection,$query)){
-    header("location:http://localhost/Add%20Modify%20Delete%20Users/admin/post.php");
+    header("location:http://localhost/news_site/Add%20Modify%20Delete%20Users/admin/post.php");
 }
 ?>

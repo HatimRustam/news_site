@@ -71,7 +71,7 @@ if (!isset($_SESSION["user_name"])) {
                         ?>
                     </select>
                     <label for="">Post Image</label>
-                    <input type="file" accept=".png/*,.jpg/*,.jpej/*" src="" alt="" name="post_img">
+                    <input type="file" accept=".WebP/*,.SVG/*,.PNG/*,.JPEG/*,.AVIF/*,.APNG/*" src="" alt="" name="post_img">
                     <input type="submit" name="save" style="margin-top: 1%;" onclick='return confirmDelete();'>
                 </form>
             </div>
