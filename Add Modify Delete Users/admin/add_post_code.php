@@ -13,7 +13,7 @@ if (isset($_FILES["post_img"])) {
     $filetmp = $_FILES["post_img"]["tmp_name"];
     $filetype = $_FILES["post_img"]["type"];
     $fileext = end(explode('.',$filename));
-    $extension = array("apng","avif","jpeg","png","svg","webp");
+    $extension = array("apng","avif","jpeg","png","svg","webp","jpg");
     if(in_array($fileext,$extension)===false){
         $error[]="this extension is not allow plz use this formate jpeg,png,jpg";
     }

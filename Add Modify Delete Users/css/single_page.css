@@ -181,3 +181,27 @@ span {
     width: 100%;
    text-align: justify;
 }
+
+@media (max-width: 576px) {
+    .header1{
+        height: auto;
+    }
+    header{
+        height: auto;
+    }
+    li{
+        margin: 0 5%;
+    }
+    .title {
+        width: 100%;
+        margin-top: 5%;
+    }
+    .tag_author_date {
+        margin: 5% 0;
+        width: 100%;
+    }
+    .image{
+        height: auto;
+        width: 100%;
+    }
+}
