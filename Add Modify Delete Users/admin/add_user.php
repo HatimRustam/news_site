@@ -74,7 +74,7 @@
                     <label for="fname">Password</label>
                     <input type="text" name="password" id="" required>
                     <?php
-                        if (!isset($_SESSION["user_name"])) {
+                        if (!isset($_SESSION["user_name"])||$_SESSION["role"] == '1') {
                             echo '<input type="hidden" name="role" value="1">';
                         }else{
                             echo '<label for="fname">Role</label>';
